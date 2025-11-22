@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+    <h1 class="heading">Image Gallery</h1>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filter-btns">
+        <button class="btn active" data-filter="all">All</button>
+        <button class="btn" data-filter="nature">Nature</button>
+        <button class="btn" data-filter="city">City</button>
+        <button class="btn" data-filter="animals">Animals</button>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+
+        <!-- ADD YOUR IMAGES HERE -->
+        <img src="images/nature.jpeg" class="image nature" alt="image" />
+        <img src="images/city.jpeg" class="image city" alt="image" />
+        <img src="images/animal.jpeg" class="image animals" alt="image" />
+        <img src="images/nature2.jpeg" class="image nature" alt="image" />
+        <img src="images/city2.jpeg" class="image city" alt="image" />
+        <img src="images/animal2.jpeg" class="image animals" alt="image" />
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <span id="close">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" />
+
+        <div class="controls">
+            <span id="prev">&#10094;</span>
+            <span id="next">&#10095;</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
